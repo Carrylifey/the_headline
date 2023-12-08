@@ -15,7 +15,7 @@ const App = () => {
         const cachedNews = getNewsFromCache();
         setArticles(cachedNews);
         const response = await axios.get(
-          "https://newsapi.org/v2/top-headlines?country=us&apiKey=dcb612d747b446e1a9067158dfabe479"
+          "https://newsapi.org/v2/top-headlines?country=us&apiKey=d2bd5db4d9c4495e8c8b1604ebd9ed84"
         );
         updateNewsCache(response.data.articles);
         setArticles(response.data.articles);
